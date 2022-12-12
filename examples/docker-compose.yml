@@ -2,9 +2,12 @@ services:
   flux-eco-sidecar-sftp:
     image: fluxms/flux-eco-sidecar-sftp:latest
     secrets:
+      - sftp_share_login
       - sftp_share_password
     ports:
       - 127.1.2.3:2222:22
 secrets:
+  sftp_share_login:
+    file: "sftp_share_login"
   sftp_share_password:
     file: "sftp_share_password"
