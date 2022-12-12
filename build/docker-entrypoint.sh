@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-export USER_LOGIN=$(cat /run/secrets/sftp_share_login)
-export USER_PASSWORD=$(cat /run/secrets/sftp_share_password)
+export USER_LOGIN=$(cat $(echo $SFTP_SHARE_LOGIN_FILE))
+export USER_PASSWORD=$(cat $(echo $SFTP_SHARE_PASSWORD_FILE))
 
 echo "generate ssh key..."
 cd /etc/ssh
