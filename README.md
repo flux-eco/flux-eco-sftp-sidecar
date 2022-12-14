@@ -21,3 +21,10 @@ Generating keys example
 ssh-keygen -t ed25519 -C "example-sftp-share-imports" -f ssh_host_ed25519_key
 ssh-keygen -b 4096 -t rsa -C "example-sftp-share-imports" -f ssh_host_rsa_key
 ```
+
+## Authors
+Developed and maintained by https://medi.ch
+
+## License
+
+[GNU GPL v3](LICENSE.md)
