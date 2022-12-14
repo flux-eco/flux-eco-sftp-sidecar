@@ -10,6 +10,7 @@ services:
     ports:
       - 127.1.2.3:2222:22
     volumes:
+      - ./share/example:/home/share
       - ./keys:/etc/ssh/keys
 secrets:
   sftp_share_login_1:
