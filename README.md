@@ -27,7 +27,7 @@ ssh-keygen -b 4096 -t rsa -C "example-sftp-share-imports" -f ssh_host_rsa_key
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
-## Authors
+## Contributors
 Developed and maintained by https://medi.ch
 
 ## License
