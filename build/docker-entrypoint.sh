@@ -4,10 +4,6 @@ set -e
 export USER_LOGIN=$(cat $(echo $SFTP_SHARE_LOGIN_FILE))
 export USER_PASSWORD=$(cat $(echo $SFTP_SHARE_PASSWORD_FILE))
 
-echo "generate ssh key..."
-cd /etc/ssh
-ssh-keygen -A
-
 echo "create group " $USER_LOGIN " | gid 1000..."
 groupadd --gid 1000 $USER_LOGIN
 

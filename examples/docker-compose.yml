@@ -9,6 +9,8 @@ services:
       - sftp_share_password_1
     ports:
       - 127.1.2.3:2222:22
+    volumes:
+      - ./keys:/etc/ssh/keys
 secrets:
   sftp_share_login_1:
     file: "sftp_share_login_1"
