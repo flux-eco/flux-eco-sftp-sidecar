@@ -1,6 +1,6 @@
 services:
-  flux-eco-sidecar-sftp:
-    image: fluxms/flux-eco-sidecar-sftp:latest
+  flux-eco-sftp-sidecar:
+    image: fluxms/flux-eco-sftp-sidecar:latest
     environment:
       - SFTP_SHARE_LOGIN_FILE=/run/secrets/sftp_share_login_1
       - SFTP_SHARE_PASSWORD_FILE=/run/secrets/sftp_share_password_1
